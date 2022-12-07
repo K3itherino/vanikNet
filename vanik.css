@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    font-family: "Ubuntu" ;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 200vh;
+    
+}
+
+html:focus-within, body {
+    scroll-behavior:scroll !important;   
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: beige;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    margin-top: 0%;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 0.1vw;
+    font-size: 1.9vw;
+}
+i {
+    width: 20px;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 3vw;
+    flex: 0;
+}
+
+.email {
+    font-size:2.65vw ;
+    position: absolute;
+    top: 80%;
+    right: 6%;
+}
+
+.icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+    
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 2vw;
+    width: 1vw;
+    height: 1vw;
+    
+    animation: idle 2s  infinite;
+    
+
+}
+@keyframes idle {
+    0%{
+        margin-top: -6%;
+    }
+    50%{
+        margin-top: -0%;
+    }
+    100% {
+        margin-top: -6%;
+    }
+}
+
+#option {
+    margin: 15px;
+    color: plum;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.option:hover {
+    color:plum;
+}
+
+img {
+    width: 10vw;
+}
+
+.banner {
+    position: relative;
+    background-image: url(../vanik/Sin_titulo.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left:50%;
+    font-weight:bolder;
+    font-size: 100px;
+    color: plum;
+    transform: translateX(-50%);
+    letter-spacing: 15px;
+    
+}
+
+
+
+.container_rangos, .container_contact, .container_modals {
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.container_modals {
+    background-color: beige;
+}
+
+.container_contact {
+    background-color: beige;
+    height: 60vh;
+}
+
+.container_rangos {
+    background-color: plum;
+}
+
+
+
+.banner_modals, .banner_rangos,  .banner_contactanos{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 1000px;
+    overflow-y: scroll;
+    transform: translateY(-50%);
+    transition: 1.5s all;
+    overflow-y: hidden;
+}
+.banner_rangos {
+    
+    color: beige;
+}
+.banner_contactanos {
+    color: plum;
+    height: 60vh;
+    justify-content: center;
+    gap: 25%;
+    
+    
+}
+.banner_modals {
+    
+    color: plum;
+    
+}
+.rangos-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+}
+
+
+h1 {
+    align-self: center;
+    text-align: center;
+    flex: 100%;
+    font-size: 6vw;
+    
+}
+
+.rangos {
+    color: beige;
+}
+.ip {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-weight:bold;
+    font-size: 4.02vw;
+    color: white;
+    transform: translateX(-50%);
+    display: inline; 
+    cursor: pointer;
+    
+}
+.modal-image {
+    
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../vanik/diamond_sword.png);
+}
+.text, .text-rangos {
+    width: 40vw;
+    font-size: 2.5vw;
+    
+    
+
+}
+.text-rangos {
+    width: 44%;
+    
+}
+
+
+
+.copy{
+    position: absolute;
+    top: 57%;
+    height: 15px;
+    width: 8.5%;
+    left: 70%;
+    
+    background-color: beige;
+    border-radius: 0.1pc;
+    visibility: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+
+.copy-text {
+    font-size: 11px;
+    color: plum;
+    letter-spacing: 0.05px;
+}
+
+.show {
+    visibility: visible;
+    
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    75% {opacity: 1;}
+    
+}
+
+.basico, .avanzado {
+    width: 40%;
+    height: 80%;
+    border-right: solid 3px beige;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;  
+}
+
+.avanzado {
+    border-right: solid 0px;
+}
+
+nav {
+    flex: 100%;
+    margin-bottom: 50%;
+    
+}
+
+ul {
+    font-size: 1.9vw;
+}
+
+nav ul li {
+    
+    margin-bottom: 1%;
+}
+
+.ventajas {
+   font-size: 4vw;
+   text-align: center;
+    
+}
+h2 {
+    
+    text-align: center;
+    
+    font-size: 3vw;
+    
+}
+.fa-tiktok {
+    transition: 0.05s;
+}
+
+.rango-img {
+    margin-right: 1vw;
+    width: 10vw;
+    height: 10vw;
+    transform: translateY(-30%);
+    
+}
+
+
+.fa-tiktok:hover {
+    color: #111111;
+    transform: scale(1.06) skew(-2deg);
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+
+.fa-discord {
+    transition: 0.05s;
+}
+
+.fa-discord:hover {
+    color: #7289da;
+    transform: scale(1.06) skew(-2deg);
+}
+
+.fa-envelope {
+    transition: 0.05s;
+}
+
+.fa-envelope:hover {
+    color: plum;
+    transform: scale(1.06) skew(-2deg);
+
+}
+
+.animate {
+    transform: translate(0);
+}
+
+
+
+
+@media (max-width: 800px) {
+    .ventajas, .text-rangos, .text {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    i {
+        font-size: 6vw;
+    }
+
+    .menu {
+        font-size: 2.5vw;
+    }
+
+    ul {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ventajas, .text-rangos, .text {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    i {
+        font-size: 6vw;
+    }
+
+    .menu {
+        font-size: 2.5vw;
+    }
+
+    ul {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
